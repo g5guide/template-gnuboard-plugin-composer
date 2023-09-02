@@ -1,0 +1,34 @@
+{
+  "name": "vendor-name/plugin-name",
+  "version": "0.1.0",
+  "license": "lgpl-2.1-or-later",
+  "autoload": {
+    "psr-4": {
+      "VendorName\\PluginName\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "kkigomi/kg": "*",
+  },
+  "require-dev": {
+    "wikimedia/composer-merge-plugin": "^2.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "mcaskill/composer-exclude-files": true
+    }
+  },
+  "extra": {
+    "merge-plugin": {
+      "require": [
+        "../../composer.common.json"
+      ],
+      "recurse": true,
+      "replace": true,
+      "ignore-duplicates": true,
+      "merge-dev": false,
+      "merge-extra": true
+    }
+  }
+}

@@ -15,10 +15,8 @@ if (version_compare(G5_GNUBOARD_VER, '5.5.8', '<')) {
     return;
 }
 
-// 실행할 코드 작성
-// ...
+// composer autoload
+require_once(__DIR__ . '/vendor/autoload.php');
 
-// kg()->hook()->onEvent('kg:booted', function () {
-    // 초기화 및 모든 플러그인 로드 완료 후 실행할 코드
-    // ...
-// });
+// HookListener 클래스 초기화 실행
+VendorName\PluginName\HookListener::getInstance();
