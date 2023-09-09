@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 // KG Framework 로드되지 않았으면 중단
-if (defined('_KG_')) {
+if (!defined('_KG_')) {
     return;
 }
 
