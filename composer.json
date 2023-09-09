@@ -8,8 +8,7 @@
     }
   },
   "require": {
-    "php": ">=7.4",
-    "kkigomi/kg": "*"
+    "php": ">=7.4"
   },
   "require-dev": {
     "wikimedia/composer-merge-plugin": "^2.1"
@@ -19,6 +18,7 @@
       "mcaskill/composer-exclude-files": true
     }
   },
+  "minimum-stability": "dev",
   "extra": {
     "merge-plugin": {
       "require": [
