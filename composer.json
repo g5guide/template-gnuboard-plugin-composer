@@ -9,7 +9,7 @@
   },
   "require": {
     "php": ">=7.4",
-    "kkigomi/kg": "*",
+    "kkigomi/kg": "*"
   },
   "require-dev": {
     "wikimedia/composer-merge-plugin": "^2.1"
